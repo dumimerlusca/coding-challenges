@@ -8,6 +8,8 @@ import (
 )
 
 func BenchmarkWC(b *testing.B) {
+	b.ReportAllocs()
+
 	args := wcArgs{}
 	file, err := os.Open("test.txt")
 	if err != nil {
