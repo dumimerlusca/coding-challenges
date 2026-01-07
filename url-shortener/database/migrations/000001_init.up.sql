@@ -1,0 +1,4 @@
+CREATE TABLE url(
+    key VARCHAR(10) PRIMARY KEY,
+    long TEXT NOT NULL
+);
